@@ -37,7 +37,7 @@ app.get("/cards", (req, res) => {
         categories: flashcards.getCategorySummaries(),
     });
 });
-// SKIBIDI OHIO GYATT
+
 app.get("/cards/:category_id", (req, res) => {
     const category = flashcards.getCategory(req.params.category_id);
     if (category != null) {
