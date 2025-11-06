@@ -1,3 +1,4 @@
+
 const card_categories = {
     "j-angielski-food": {
         name: "j. angielski - food",
