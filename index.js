@@ -21,6 +21,35 @@
 //     console.log(`Server listening on http://localhost:${port}`);
 // });
 
+const tanks = {
+    "M4A3 76 W": {
+        name: "M4A3 76 W",
+        nation: "USA",
+        gun_caliber: "76mm",
+        crew: "5",
+        horsepower: "500",
+        ammo_types: ["AP", "APCBC", "HVAP", "HE"]
+    },
+    "T-34-85": {
+        name: "T-34-85",
+        nation: "USSR",
+        gun_caliber: "85mm",
+        crew: "4",
+        horsepower: "500",
+        ammo_types: ["APHE", "APHEBC", "HVAP", "HE"]
+    }
+}
+
+function getTanks() {
+    Object.entries(tanks).map(([id, tank]) => {
+        return {id, tank: tank.name};
+    });
+};
+
+
+
+
+
 import express from "express";
 import flashcards from "./models/flashcards.js";
 
