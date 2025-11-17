@@ -16,3 +16,20 @@ main {
     padding: 1rem;
     border-radius: 0.5rem;
 }
+
+button {
+    padding: 20px;
+    background-color: rgb(93, 171, 255);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+div {
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
